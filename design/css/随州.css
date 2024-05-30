@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+    background-color: rgb(245, 253, 171);
+}
+h1{
+    color: rgb(128, 192, 255);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 200px;
+}
+.one img{
+    width: 20%;
+    margin-top: 15vh;
+    margin-left: 20px;
+    margin: 30px;
+    align-items: center;
+}

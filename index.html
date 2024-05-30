@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peng Shuangyu</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        /* 取消链接的下划线 */
+        a {
+          text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="daily practice.html">Daily Practice</a></li>
+            <li><a href="field trip.html">Field Trip</a></li>
+            <li><a href="about me.html">About Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    <h2>↓滚轮滚一下呗↓</h2>
+    <div class="bg">
+        <span>Peng<br>Shuangyu</span>
+    </div>
+    <h1>Personal Portfolio</h1>
+    <div class="ad"><a href="design.html">ENTER</a></div>
+</body>
+<script type="text/javascript">
+    const bg=document.querySelector(".bg");
+    document.addEventListener("scroll",function(){
+        const scrollY=window.scrollY;
+        if(scrollY!=0){
+            bg.style.backgroundPosition="calc(50% + "+scrollY+"px) calc(50% + "+scrollY+"px)";
+        }else{
+            bg.style.backgroundPosition="";
+        }
+    })
+</script>
+</html>

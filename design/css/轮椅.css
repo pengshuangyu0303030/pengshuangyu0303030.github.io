@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color: rgb(254, 118, 60);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 200px;
+}
+img{
+    width: 100%;
+    margin-top: 20vh;
+}
+video{
+    margin-top: 10vh;
+}
+.ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 使容器高度等于视口高度 */
+  }

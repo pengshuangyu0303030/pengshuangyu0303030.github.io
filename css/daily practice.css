@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+    background-color: #835a0756;
+}
+.container {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav {
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+nav ul li::after {
+    content: '';
+    background: #835a0756;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s,opacity 0.5s;
+}
+ nav ul li:hover{
+    color: #fff;
+}
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+h4{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    left: 20px;
+    text-align: left;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 2.5rem;
+}
+a:visited {
+    color: #777; /* 保持与默认颜色相同 */
+}
+a {
+    text-decoration: none;
+}
+.photo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+img{
+    width: 100%;
+
+}

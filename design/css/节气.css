@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    color: rgba(212, 115, 250, 0.718);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 200px;
+}
+img{
+    width: 100%;
+    margin-top: 20vh;
+}

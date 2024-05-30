@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+    background-color: #2a8307a1;
+}
+.container {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  nav {
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+  }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+  }
+  nav ul li::after {
+    content: '';
+    background: #2a8307a1;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s,opacity 0.5s;
+  }
+  nav ul li:hover{
+    color: #fff;
+  }
+  nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+  }
+.bg{
+    background-image: url("../img/banner.1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 200vh;
+    font-size: 300px;
+    font-weight: 800px;
+    text-align: center;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    padding-top: 100px;
+}
+.bg::before{
+    content: "";
+    background-image: inherit;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -99;
+}
+h2{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    left: 20px;
+    text-align: left;
+    letter-spacing: 8px;
+    color: #fff;
+}
+h1{
+    position: absolute;
+    top: 150vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    color: #fff;
+    letter-spacing: 10px;
+    padding: 100px 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 40px;
+}
+a:visited {
+  color: #777; /* 保持与默认颜色相同 */
+}
+.ad a{
+    position: absolute;
+    top: 200vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 150px;
+    font-weight: 800px;
+}

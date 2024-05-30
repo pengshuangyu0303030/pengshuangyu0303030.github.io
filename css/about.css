@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+    background-color: #ffb0e1e3;
+}
+.container {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav {
+    background: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+nav ul li::after {
+    content: '';
+    background: #ffb0e1e3;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s,opacity 0.5s;
+}
+ nav ul li:hover{
+    color: #fff;
+}
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+h4{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    left: 20px;
+    text-align: left;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 2.5rem;
+}
+a:visited {
+    color: #777; /* 保持与默认颜色相同 */
+}
+a {
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 120vh;
+    margin: 0 auto;
+    width: 80vw;
+}
+.main .book {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60rem;
+    height: 40rem;
+    margin: 2rem;
+    background: rgb(153, 201, 255);
+}
+.main .book img{
+    position: absolute;
+    bottom: 5rem;
+    left: 1vw;
+    height: 15rem;
+    transition: 0.7s;
+}
+.main .book:hover img{
+    left: 60%;
+    height: 30rem;
+}
+.main .book .text{
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 2.5rem 2rem 2rem 4rem;
+    left: 25%;
+    transition: 0.7s;
+}
+.main .book:hover .text{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.main .book .text h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    line-height: 1em;
+}
+.main .book .text p{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
